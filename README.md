@@ -1,3 +1,5 @@
+# Welcome to QuickBite Takeout!
+
 # 1. Technologies Used
 
 ## Backend
