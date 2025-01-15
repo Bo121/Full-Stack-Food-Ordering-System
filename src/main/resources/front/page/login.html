@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 3 meta tags must come first; any other content must follow -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title>Restaurant</title>
+    <link rel="icon" href="./../images/favico.ico">
+    <!-- Root font size settings for different screen sizes -->
+    <script src="./../js/base.js"></script>
+    <!-- Element UI styles -->
+    <link rel="stylesheet" href="../../backend/plugins/element-ui/index.css"/>
+    <!-- Import Vant styles -->
+    <link rel="stylesheet" href="../styles/vant.min.css"/>
+    <!-- Import custom styles -->
+    <link rel="stylesheet" href="../styles/index.css"/>
+    <!-- Styles for this page -->
+    <link rel="stylesheet" href="./../styles/login.css"/>
+</head>
+<body>
+<div id="login" v-loading="loading">
+    <div class="divHead">Log in</div>
+    <div class="divContainer">
+        <el-input placeholder="Please enter your email" v-model="form.email" maxlength='50'/>
+        </el-input>
+        <div class="divSplit"></div>
+        <el-input placeholder="Verification code" v-model="form.code" maxlength='30'/>
+        </el-input>
+        <span @click='getCode'>Get Code</span>
+    </div>
+    <div class="divMsg" v-if="msgFlag">The format is not correct</div>
+    <el-button type="primary" :class="{btnSubmit:1===1,btnNoEmail:!form.email,btnEmail:form.email}" @click="btnLogin">
+        Login
+    </el-button>
+</div>
+<!-- Development environment version, includes helpful console warnings -->
+<script src="../../backend/plugins/vue/vue.js"></script>
+<!-- Import Element UI components -->
+<script src="../../backend/plugins/element-ui/index.js"></script>
+<!-- Import Vant script -->
+<script src="./../js/vant.min.js"></script>
+<!-- Import Axios -->
+<script src="../../backend/plugins/axios/axios.min.js"></script>
+<script src="./../js/request.js"></script>
+<script src="./../api/login.js"></script>
+</body>
+<script>
+    new Vue({
+        el: "#login",
+        data() {
+            return {
+                form: {
+                    email: '',
+                    code: ''
+                },
+                msgFlag: false,
+                loading: false
+            }
+        },
+        computed: {},
+        created() {
+        },
+        mounted() {
+        },
+        methods: {
+            getCode() {
+                this.form.code = ''
+                const regex = /([a-z]|[0-9])+((\.|\-|_)?([a-z]|[0-9])+)*@[a-z]+(\-?[a-z]+)*(\.[a-z]+(\-?[a-z]+)*)+/;
+                if (regex.test(this.form.email)) {
+                    // When validation passes, display "Wait a second..."
+                    this.$toast.loading({
+                        message: 'Wait a second...',
+                        forbidClick: true,  // Disable background click
+                        duration: 2000 // Delay before closing
+                    });
+                    this.msgFlag = false
+                    sendMsgApi({email: this.form.email}).then((res) => {
+                        if (res.code === 1) {
+                            this.$message(
+                                {
+                                    message: "The verification code has been sent, please check your spam folder",
+                                    type: 'success'
+                                }
+                            )
+                        } else {
+                            this.$message(
+                                {
+                                    message: "Failed to send verification code, please enter a valid email",
+                                    type: 'failed'
+                                }
+                            )
+                        }
+                    });
+                } else {
+                    this.msgFlag = true
+                }
+            },
+            async btnLogin() {
+                if (this.form.email && this.form.code) {
+                    this.loading = true
+                    const res = await loginApi({email: this.form.email, code: this.form.code})
+                    this.loading = false
+                    if (res.code === 1) {
+                        sessionStorage.setItem("userEmail", this.form.email)
+                        window.requestAnimationFrame(() => {
+                            window.location.href = '/front/index.html'
+                        })
+                    } else {
+                        this.$notify({type: 'warning', message: res.msg});
+                    }
+                } else {
+                    this.$notify({type: 'warning', message: 'Please enter your email and verification code'});
+                }
+            }
+        }
+    })
+</script>
+</html>

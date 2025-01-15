@@ -1,0 +1,53 @@
+server:
+  port: 8080  # Default port
+
+spring:
+  application:
+    name: quickbite_takeaway  # Application name
+
+  # Database information | Required
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      # The following sensitive information will be filled in via server launch configurations #
+      # IDEA->Run->Edit Configurations->Environment Variables->Add the following variables #
+      url: jdbc:mysql://localhost:3306/quickbite
+      username: root
+      password: 
+
+  # Email verification configuration | Required
+  mail:
+    host: smtp.gmail.com  # If you need to use a non-QQ email, configure the host accordingly
+    username:  # Please configure your email address
+    password:  # Please configure your email SMTP authorization code.
+    port: 587
+    timeout: 10 # Verification code validity period (in minutes)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  # Redis cache configuration | Required
+  redis:
+    host: localhost
+    port: 6379          # Default port
+    password:           # Default is empty
+    database: 0         # Default uses database 0
+
+# MyBatis-Plus configuration
+mybatis-plus:
+  configuration:
+    # Map database table and field names with underscores to camelCase
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+
+# Other configuration information
+quickbite:
+  # Required
+  linux-path: /Users/aiden/Desktop/QuickBite/img/   # Local test file storage path
+
