@@ -13,13 +13,13 @@ spring:
       # IDEA->Run->Edit Configurations->Environment Variables->Add the following variables #
       url: jdbc:mysql://localhost:3306/quickbite
       username: root
-      password: sheng20000902
+      password:
 
   # Email verification configuration | Required
   mail:
     host: smtp.gmail.com  # If you need to use a non-QQ email, configure the host accordingly
-    username: sqyang166946@gmail.com # Please configure your email address
-    password: fjaqimubckqanjso # Please configure your email SMTP authorization code.
+    username: # Please configure your email address
+    password:  # Please configure your email SMTP authorization code.
     port: 587
     timeout: 10 # Verification code validity period (in minutes)
     properties:
