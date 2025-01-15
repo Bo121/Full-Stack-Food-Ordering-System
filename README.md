@@ -57,82 +57,82 @@
 
 ## (1) Backend
 
-### src/main/java/com/app/quickbite
+src/main/java/com/app/quickbite
 
-### controller: RESTful API controllers.
+**controller:** RESTful API controllers.
 
-### service: Business logic and service layer.
+**service:** Business logic and service layer.
 
-### mapper: MyBatis mappers for database interaction.
+**mapper:** MyBatis mappers for database interaction.
 
-### entity: Java entity classes for database tables.
+**entity:** Java entity classes for database tables.
 
-### config: Configuration files for Redis, MyBatis, etc.
+**config:** Configuration files for Redis, MyBatis, etc.
 
 ## (2) Frontend
 
-### public/: Static assets.
+**public/:** Static assets.
 
-### src/
+**src/**
 
-### api/: Axios service calls.
+**api/:** Axios service calls.
 
-### components/: Vue.js components.
+**components/:** Vue.js components.
 
-### views/: Page components.
+**views/:** Page components.
 
-### store/: Vuex state management.
+**store/:** Vuex state management.
 
 # 4. API Endpoints
 
 ## (1) Employee Management
 
-### POST /employee/login: Login API.
+**POST /employee/login:** Login API.
 
-### POST /employee/logout: Logout API.
+**POST /employee/logout:** Logout API.
 
-### GET /employee/page: List employees with pagination.
+**GET /employee/page:** List employees with pagination.
 
-### POST /employee: Add employee.
+**POST /employee:** Add employee.
 
-### PUT /employee: Edit or enable/disable employee.
+**PUT /employee:** Edit or enable/disable employee.
 
 ## (2) Category Management
 
-### GET /category/page: List categories with pagination.
+**GET /category/page:** List categories with pagination.
 
-### POST /category: Add category.
+**POST /category:** Add category.
 
-### PUT /category: Edit category.
+**PUT /category:** Edit category.
 
-### DELETE /category: Delete category.
+**DELETE /category:** Delete category.
 
-### Dish Management
+## (3) Dish Management
 
-### GET /dish/page: List dishes with pagination.
+**GET /dish/page:** List dishes with pagination.
 
-### POST /dish: Add dish.
+**POST /dish:** Add dish.
 
-### PUT /dish: Edit dish.
+**PUT /dish:** Edit dish.
 
-### DELETE /dish: Delete dish.
+**DELETE /dish:** Delete dish.
 
-## (3) Set Meal Management
+## (4) Set Meal Management
 
-### GET /setmeal/page: List set meals with pagination.
+**GET /setmeal/page:** List set meals with pagination.
 
-### POST /setmeal: Add set meal.
+**POST /setmeal:** Add set meal.
 
-### PUT /setmeal: Edit set meal.
+**PUT /setmeal:** Edit set meal.
 
-### DELETE /setmeal: Delete set meal.
+**DELETE /setmeal:** Delete set meal.
 
-### POST /setmeal/status: Update set meal availability.
+**POST /setmeal/status:** Update set meal availability.
 
-## (4) Order Management
+## (5) Order Management
 
-### GET /order/page: List orders with pagination.
+**GET /order/page:** List orders with pagination.
 
-### PUT /order: Update order status.
+**PUT /order:** Update order status.
 
-### GET /orderDetail/{id}: Fetch order details.
+**GET /orderDetail/{id}:** Fetch order details.
