@@ -1,4 +1,4 @@
-# Technologies Used
+# 1. Technologies Used
 
 ## Backend
 
@@ -30,9 +30,9 @@
 
 
 
-# QuickBite Takeout Features 
+# 2. QuickBite Takeout Features 
 
-## 1. User End Features
+## (1) User End Features
 
 ![User Login](User_Login.png)
 ![Verification Code](Verification_Code.png)
@@ -42,7 +42,7 @@
 ![Address Editing](Address.png)
 ![Place Order](Place_Order.png)
 
-## 2. Admin End Features
+## (2) Admin End Features
 
 ![Admin Login](Login.png)
 ![Employee Page](Employee_Page.png)
