@@ -82,3 +82,57 @@
 ### views/: Page components.
 
 ### store/: Vuex state management.
+
+# 4. API Endpoints
+
+## (1) Employee Management
+
+### POST /employee/login: Login API.
+
+### POST /employee/logout: Logout API.
+
+### GET /employee/page: List employees with pagination.
+
+### POST /employee: Add employee.
+
+### PUT /employee: Edit or enable/disable employee.
+
+## (2) Category Management
+
+### GET /category/page: List categories with pagination.
+
+### POST /category: Add category.
+
+### PUT /category: Edit category.
+
+### DELETE /category: Delete category.
+
+### Dish Management
+
+### GET /dish/page: List dishes with pagination.
+
+### POST /dish: Add dish.
+
+### PUT /dish: Edit dish.
+
+### DELETE /dish: Delete dish.
+
+## (3) Set Meal Management
+
+### GET /setmeal/page: List set meals with pagination.
+
+### POST /setmeal: Add set meal.
+
+### PUT /setmeal: Edit set meal.
+
+### DELETE /setmeal: Delete set meal.
+
+### POST /setmeal/status: Update set meal availability.
+
+## (4) Order Management
+
+### GET /order/page: List orders with pagination.
+
+### PUT /order: Update order status.
+
+### GET /orderDetail/{id}: Fetch order details.
