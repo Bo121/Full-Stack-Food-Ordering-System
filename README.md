@@ -1,5 +1,5 @@
 ![User Login](User_Login.png)
-![Verification Code](Verification_code.png)
+![Verification Code](Verication_Code.png)
 ![User Main Page](User_Main_Page.png)
 ![Dish Info](Dish_Info.png)
 ![Cart](Cart.png)
