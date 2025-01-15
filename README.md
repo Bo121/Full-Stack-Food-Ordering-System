@@ -1,4 +1,6 @@
-# User End
+# Features 
+
+## 1. User End Features
 
 ![User Login](User_Login.png)
 ![Verification Code](Verification_Code.png)
@@ -8,7 +10,7 @@
 ![Address Editing](Address.png)
 ![Place Order](Place_Order.png)
 
-# Admin End 
+## 2. Admin End Features
 
 ![Admin Login](Login.png)
 ![Employee Page](Employee_Page.png)
