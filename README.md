@@ -2,7 +2,7 @@
 
 # 1. Technologies Used
 
-## Backend
+## (1) Backend
 
 **Spring Boot:** REST API framework.
 
@@ -16,7 +16,7 @@
 
 **JavaMailSender:** Email service.
 
-## Frontend
+## (2) Frontend
 
 **Vue.js:** Frontend framework for reactive UI.
 
