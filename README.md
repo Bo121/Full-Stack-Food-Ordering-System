@@ -38,7 +38,7 @@
 ![Verification Code](Verification_Code.png)
 ![User Main Page](User_Main_Page.png)
 ![Dish Info](Dish_Info.png)
-![Cart](Cart.png)
+![Cart](Features Images/Cart.png)
 ![Address Editing](Address.png)
 ![Place Order](Place_Order.png)
 
