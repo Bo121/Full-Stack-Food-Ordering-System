@@ -26,7 +26,7 @@
 
 **Axios:** HTTP client for API requests.
 
-## Others
+## (3) Others
 
 **Aliyun SMS API:** For sending SMS notifications.
 
