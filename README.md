@@ -4,31 +4,31 @@
 
 ## Backend
 
-### Spring Boot: REST API framework.
+**Spring Boot:** REST API framework.
 
-### Spring Security: Authentication and authorization.
+**Spring Security:** Authentication and authorization.
 
-### MyBatis-Plus: ORM for database operations, integrated with Spring Security for role-based data access.
+**MyBatis-Plus:** ORM for database operations, integrated with Spring Security for role-based data access.
 
-### Redis: Caching system.
+**Redis:** Caching system.
 
-### MySQL: Relational database.
+**MySQL:** Relational database.
 
-### JavaMailSender: Email service.
+**JavaMailSender:** Email service.
 
 ## Frontend
 
-### Vue.js: Frontend framework for reactive UI.
+**Vue.js:** Frontend framework for reactive UI.
 
-### Vuex: State management library for handling application state efficiently.
+**Vuex:** State management library for handling application state efficiently.
 
-### Element-UI: UI component library.
+**Element-UI:** UI component library.
 
-### Axios: HTTP client for API requests.
+**Axios:** HTTP client for API requests.
 
 ## Others
 
-### Aliyun SMS API: For sending SMS notifications.
+**Aliyun SMS API:** For sending SMS notifications.
 
 
 
