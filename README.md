@@ -52,3 +52,33 @@
 ![Dish Page](Feature-Images/Dish_Page.png)
 ![Combo](Feature-Images/Combo.png)
 ![Orders Page](Feature-Images/Orders_Page.png)
+
+# 3. Project Structure
+
+## (1) Backend
+
+### src/main/java/com/app/quickbite
+
+### controller: RESTful API controllers.
+
+### service: Business logic and service layer.
+
+### mapper: MyBatis mappers for database interaction.
+
+### entity: Java entity classes for database tables.
+
+### config: Configuration files for Redis, MyBatis, etc.
+
+## (2) Frontend
+
+### public/: Static assets.
+
+### src/
+
+### api/: Axios service calls.
+
+### components/: Vue.js components.
+
+### views/: Page components.
+
+### store/: Vuex state management.
