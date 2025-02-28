@@ -8,7 +8,7 @@
 
 **Spring Security:** Authentication and authorization.
 
-**MyBatis-Plus:** ORM for database operations, integrated with Spring Security for role-based data access.
+**Hibernate:** ORM for database operations, integrated with Spring Security for role-based data access.
 
 **Redis:** Caching system.
 
