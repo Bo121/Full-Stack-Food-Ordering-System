@@ -34,25 +34,49 @@
 
 # 2. QuickBite Takeout Features 
 
-## (1) User End Features
+## (1) User Portal
 
-![User Login](Feature-Images/User_Login.png)
-![Verification Code](Feature-Images/Verification_Code.png)
-![User Main Page](Feature-Images/User_Main_Page.png)
-![Dish Info](Feature-Images/Dish_Info.png)
-![Cart](Feature-Images/Cart.png)
-![Address Editing](Feature-Images/Address.png)
-![Place Order](Feature-Images/Place_Order.png)
+### 1. Login
+![User login screen](Feature-Images/User_Login.png)
 
-## (2) Admin End Features
+### 2. Email Verification
+![Verification code input](Feature-Images/Verification_Code.png)
 
-![Admin Login](Feature-Images/Login.png)
-![Employee Page](Feature-Images/Employee_Page.png)
-![Category Page](Feature-Images/Category_Page.png)
-![Dish Page](Feature-Images/Dish_Page.png)
-![Combo](Feature-Images/Combo.png)
-![Orders Page](Feature-Images/Orders_Page.png)
+### 3. Browse & Order
+![User main ordering page](Feature-Images/User_Main_Page.png)
 
+### 4. Flavor & Options
+![Dish details and option selection](Feature-Images/Dish_Info.png)
+
+### 5. Cart
+![Shopping cart summary](Feature-Images/Cart.png)
+
+### 6. Address Management
+![Address editing form](Feature-Images/Address.png)
+
+### 7. Place Order
+![Order confirmation and submit](Feature-Images/Place_Order.png)
+
+
+## (2) Admin Dashboard
+
+### 1. Admin Login
+![Admin login](Feature-Images/Login.png)
+
+### 2. Employees
+![Employee management page](Feature-Images/Employee_Page.png)
+
+### 3. Categories
+![Category management page](Feature-Images/Category_Page.png)
+
+### 4. Dishes
+![Dish management page](Feature-Images/Dish_Page.png)
+
+### 5. Combos
+![Combo builder page](Feature-Images/Combo.png)
+
+### 6. Orders
+![Orders overview and details](Feature-Images/Orders_Page.png)
 # 3. Project Structure
 
 ## (1) Backend
